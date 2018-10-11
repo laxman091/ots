@@ -22,10 +22,13 @@ if($user == '' || $_SESSION['username'] =='content' || $_SESSION['log_type'] =='
   <script src="../js/jquery.min.js"></script>
   <script src="../js/bootstrap.min.js"></script-->
   <script src="../js/global.js"></script>
-  <script src="../js/strict1.js"></script>
+  <script src="../js/strict.js"></script>
   <script>
   $(document).ready(function()
   {
+	 $('#home').click(function(){
+	 	$('#response_here').html('');
+	 });
 	 $('#manageopt li').click(function(){
 		 var cat =  $(this).attr("id");
 		 //alert(cat);
@@ -81,13 +84,8 @@ if($user == '' || $_SESSION['username'] =='content' || $_SESSION['log_type'] =='
             <li><a href="#about">About</a></li>
             <li><a href="#contact">Contact</a></li-->
             <li class="dropdown" id="showopt1">
-               
-			   <a href="..pages/admin.php" class="dropdown-toggle" data-toggle="dropdown">Home</a>
-					<!--ul class="dropdown-menu dropdown-user" id="order">
-                        <li id="new_order"><a href="#"><i class="glyphicon glyphicon-shopping-cart"></i> New Order</a>
-                        </li>
-                    </ul-->
-            <!--/ul-->
+            	<a href= "javascript:void()" id="home">Home</a>
+			   <!--a href="../pages/admin.php" class="dropdown-toggle" data-toggle="dropdown">Home</a-->
             </li>
 			<li class="dropdown" id="showopt2">
                
